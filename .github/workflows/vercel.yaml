@@ -15,12 +15,6 @@ jobs:
         
       - name: Allow unsecure commands
         run: echo "ACTIONS_ALLOW_UNSECURE_COMMANDS=true" >> $GITHUB_ENV
-
-      - name: Install dependencies
-        run: npm install
-
-      - name: Build application
-        run: npm run build
     
       - name: Deploy to Staging
         id: deploy-vercel-staging
